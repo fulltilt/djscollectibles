@@ -300,7 +300,7 @@ export async function getCollectionProducts({
       sortKey: sortKey === 'CREATED_AT' ? 'CREATED' : sortKey
     }
   });
-
+  console.log(res);
   if (!res.body.data.collection) {
     console.log(`No collection found for \`${collection}\``);
     return [];
